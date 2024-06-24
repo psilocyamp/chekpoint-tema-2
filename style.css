@@ -1,0 +1,133 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 0px 0px;
+}
+.buttons {
+    color: white;
+    text-decoration: none;
+    padding: 7px 83px;
+    font-size: 18px;
+}
+.buttons[href="#"] {
+    background-color: rgb(99, 194, 61);
+}
+header{
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    min-height: 20vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.header-content {
+    position: relative;
+}
+.headerImg{ min-height: 30vh;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: calc(1em + 4vw);
+    margin: 0;
+}
+.h1color{
+    color: rgb(99, 194, 61);
+}
+main{
+    background-image: url(./assets/mountain.jpg);
+    background-size: cover;
+    background-position-y: -225px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    height: auto;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 94px 0px 94px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.card ul {
+    padding: 9px 40px;
+}
+
+.card ul li {
+    padding: 5px 0;
+}
+
+.card ul li:first-child {
+    border-top: none;
+}
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color:black;
+}
+footer{
+    background-color: rgb(99, 194, 61);
+    min-height: 10vh;
+    height: auto;
+    align-items: center;
+    color: white;
+}
+@media(max-width: 768px){
+    .card{
+        width: 200px;
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 650px){
+    div{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 425px){
+    nav{
+        flex-direction: column;
+    }
+}
